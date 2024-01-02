@@ -21,7 +21,5 @@
 			"postCreateCommand": "pip3 --disable-pip-version-check --no-cache-dir install -r requirements.txt"
 		}
 	},
-	"containerEnv": {
-		"MY_CONTAINER_VAR2": "${localEnv:HOME}"
-	}
+	"runArgs": ["--env-file",".env"]
 }
